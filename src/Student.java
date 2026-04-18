@@ -33,7 +33,7 @@ public class Student {
     }
     void calculateGrade() {
         if (marks >= 75) {
-            grade = 'A';
+            grade ='A';
         } else if (marks >= 60) {
             grade = 'B';
         } else if (marks >= 50) {
