@@ -16,20 +16,22 @@ public class Student {
     }
 
     Student(String studentName, int studentRollNumber, String studentCourse, double studentFee, double studentMarks) {
-        name = studentName;
-        rollNumber = studentRollNumber;
-        course = studentCourse;
-        fee = studentFee;
-        marks = studentMarks;
+        this.name = studentName;
+        this.rollNumber = studentRollNumber;
+        this.course = studentCourse;
+        this.fee = studentFee;
+        this.marks = studentMarks;
         calculateGrade();
     }
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Roll Number: " + rollNumber);
-        System.out.println("Course: " + course);
-        System.out.println("Fee: " + fee);
-        System.out.println("Marks: " + marks);
-        System.out.println("Grade: " + grade);
+
+    @Override
+    public String toString() {
+       return "Name: " + name +
+       "Roll Number: " + rollNumber +
+       "Course: " + course +
+       "Fee: " + fee +
+       "Marks: " + marks +
+       "Grade: " + grade;
     }
     
     void calculateGrade() {
