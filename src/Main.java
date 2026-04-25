@@ -7,7 +7,7 @@ public class Classwork {
         //Student s1 = new Student();
         //s1.display();
 
-        System.out.println("Is Passing: " + s1.isPassing());
+        //System.out.println("Is Passing: " + s1.isPassing());
 
         // Using parameterized constructor
         Student s2 = new Student("Abubakar", 101, "Computer Science", 50000, 85);
