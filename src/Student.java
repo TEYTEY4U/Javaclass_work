@@ -31,6 +31,7 @@ public class Student {
         System.out.println("Marks: " + marks);
         System.out.println("Grade: " + grade);
     }
+    
     void calculateGrade() {
         if (marks >= 75) {
             grade ='A';
@@ -44,10 +45,12 @@ public class Student {
             grade = 'F';
         }
     }
+    
     void updateFee(double newFee) {
         fee = newFee;
         System.out.println("Fee updated successfully!");
     }
+    
     boolean isPassing() {
         return marks >= 50;
     }
